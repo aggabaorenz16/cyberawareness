@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.header {
+    width: 100%;
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    font-family: 'Roboto', !important;
+    font-size: 15px;
+}
+.homePage {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    place-items: center;
+}
+.homePage .textPage h1 {
+    color: #2619FC;
+    font-weight: bold;
+    margin-left: -100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+}
+.homePage .textPage p {
+    color: #2419fcdc;
+    margin: 1rem;
+    margin-left: -100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.homePage .imagePage img {
+    width: 350px;
+    height: 500px;
+}
+.listPage {
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    place-items: center;
+    background-color: black;
+    color: white;
+}
+.listPage a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.cyberText {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    margin: 1rem;
+}
+.cyberBox {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    place-items: center;
+}
+.prevent {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-items: center;
+    padding: 1rem;
+}
+.prevent .prevents {
+    background-color: rgba(219, 212, 212, 0.11);
+    margin: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.151), 0 6px 20px 0 rgba(0, 0, 0, 0.37);
+    text-align: center;
+    height: 220px;
+    width: 250px;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+.prevent .prevents img {
+    width: 150px;
+    height: 100px;
+}
+.prevent .prevents button {
+    margin: 1rem;
+    width: 120px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.tiPs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    justify-items: center;
+    padding: 1rem;
+}
+.tiPs .cyberTips {
+    background-color: rgba(219, 212, 212, 0.11);
+    margin: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.151), 0 6px 20px 0 rgba(0, 0, 0, 0.37);
+    text-align: center;
+    height: 380px;
+    width: 350px;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+.tiPs .cyberTips a {
+    margin: 1rem;
+    width: 120px;
+    height: 30px;
+    background-color: #ff0000d0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    line-height: 5rem;
+    padding: 1rem 3rem;
+    border-radius: 25px;
+    text-decoration: none;
+}
+iframe {
+    padding: 1rem;
+    width: 300px;
+    height: 220px;
+}
+.tiPs .cyberTips a:hover {
+    color: white;
+    background-color: #121212de;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.151), 0 6px 20px 0 rgba(0, 0, 0, 0.37);
+}
+
+.aboutDev {
+    display: grid;
+    height: 82vh;
+    justify-items: center;
+    padding: 1rem;
+}
+.aboutDev .dot {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+.aboutDev .dot .dot1 {
+    background-color: #695f5f;;
+    width: 12px;
+    margin: 1rem;
+    height: 12px;
+    border-radius: 80px;
+    border: 4px solid #565656;
+    cursor: pointer;
+}
+.aboutDev .dot .dot1:hover {
+    background-color: #000000;
+    border: 4px solid #000000;
+}
+.aboutDev .title {
+    padding: 1rem;
+}
+.aboutDev .img img {
+    width: 150px;
+    border-radius: 80px;
+    border: 4px solid #000000;
+    height: 150px;
+    cursor: pointer;
+}
+.aboutDev .nameDev p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 1rem;
+    color: black;
+    display: grid;
+    justify-content: center;
+}
+.aboutDev .textContent p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 160%;
+    text-align: center;
+    color: black;
+}
+.aboutDev .btnView a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    width: 150px;
+    font-size: 15px;
+    height: 100px;
+    padding: 0.5rem;
+}
+.aboutDev .btnView a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(41, 41, 41, 0.898);
+}
+@media all and (max-width: 500px) {
+    .homePage {
+        grid-template-columns: repeat(1, auto);
+        place-items: center;
+        width: 100vw;
+    }
+    .listPage {
+        grid-template-columns: repeat(1, auto);
+        place-items: center;
+        padding: 0.5rem;
+        height: 100%;
+        width: 100vw;
+    }
+    .cyberBox {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        place-items: center;
+    }
+    .prevent {
+        grid-template-columns: repeat(1, auto);
+        align-items: center;
+        justify-items: center;
+    }
+    .header {
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    font-family: 'Roboto', !important;
+    }
+    .homePage .textPage h1 {
+        color: #2619FC;
+        font-weight: bold;
+        margin-left: 0px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 60px;
+    }
+    .homePage .textPage p {
+        color: #2419fcdc;
+        margin-left: 0px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+    }
+    .homePage .imagePage img {
+        width: 280px;
+        height: 250px;
+    }
+    .listPage a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto' sans-serif;
+        font-size: 20px;
+        padding: 0.5rem;
+    }
+    .tiPs {
+        grid-template-columns: repeat(1, auto);
+    }
+    .tiPs .cyberTips {
+        width: 280px;
+    }
+    iframe {
+        width: 250px;
+    }
+    .aboutDev {
+        height: 130vh;
+    }
+}
+@media all and (min-width: 501px) and (max-width: 720px) {
+    .homePage {
+        grid-template-columns: repeat(1, auto);
+        place-items: center;
+        width: 100vw;
+    }
+    .listPage {
+        grid-template-columns: repeat(2, auto);
+        place-items: center;
+        padding: 0.5rem;
+        height: 100%;
+        width: 100vw;
+    }
+    .cyberBox {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        place-items: center;
+    }
+    .prevent {
+        grid-template-columns: repeat(2, auto);
+        align-items: center;
+        justify-items: center;
+    }
+    .header {
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    font-family: 'Roboto', !important;
+    }
+    .homePage .textPage h1 {
+        color: #2619FC;
+        font-weight: bold;
+        margin-left: 0px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 60px;
+    }
+    .homePage .textPage p {
+        color: #2419fcdc;
+        margin-left: 0px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+    }
+    .homePage .imagePage img {
+        width: 280px;
+        height: 250px;
+    }
+    .listPage a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto' sans-serif;
+        font-size: 20px;
+        padding: 0.5rem;
+    }
+    .tiPs {
+        grid-template-columns: repeat(1, auto);
+    }
+    .tiPs .cyberTips {
+        width: 280px;
+    }
+    iframe {
+        width: 250px;
+    }
+    .aboutDev {
+        height: 130vh;
+    }
+}
+@media all and (min-width: 721px) and (max-width: 1081px) {
+    .homePage {
+        grid-template-columns: repeat(2, auto);
+        place-items: center;
+        width: 100vw;
+    }
+    .listPage {
+        grid-template-columns: repeat(4, auto);
+        place-items: center;
+        padding: 0.5rem;
+        height: 100%;
+        width: 100vw;
+    }
+    .cyberBox {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        place-items: center;
+    }
+    .prevent {
+        grid-template-columns: repeat(2, auto);
+        align-items: center;
+        justify-items: center;
+    }
+    .header {
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    font-family: 'Roboto', !important;
+    }
+    .homePage .textPage h1 {
+        color: #2619FC;
+        font-weight: bold;
+        margin-left: 0px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 60px;
+    }
+    .homePage .textPage p {
+        color: #2419fcdc;
+        margin-left: 0px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+    }
+    .homePage .imagePage img {
+        width: 280px;
+        height: 250px;
+    }
+    .listPage a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto' sans-serif;
+        font-size: 20px;
+        padding: 0.5rem;
+    }
+    .tiPs {
+        grid-template-columns: repeat(2, auto);
+    }
+    .tiPs .cyberTips {
+        width: 280px;
+    }
+    iframe {
+        width: 250px;
+    }
+    .aboutDev {
+        height: 130vh;
+    }
+}
